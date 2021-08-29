@@ -206,6 +206,26 @@ nav ul li a:hover{
   
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -261,7 +281,10 @@ nav ul li a:hover{
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background-image: url(light-purple-20.jpg);
+  background-image: url(WebsiteWallpaperCraft.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 
@@ -273,37 +296,6 @@ nav ul li a:hover{
   font-size: 144%;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
 /* Add an italic font style to all quotes */
 q {font-style: italic;}
 
@@ -313,11 +305,29 @@ q {font-style: italic;}
   font-size: medium;
 }
 
-  
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
 body {
   
-  
-  background-color: rgb(204, 255, 255);
+  background-color: #F5ABC9;
   color: black;
   font-size: 25px;
   border-radius: 10px;
@@ -325,12 +335,10 @@ body {
 }
 
 div.sticky {
-  
   position: none;
   top: 50;
-  
   padding: 10px;
-  
+  padding-left: 16%;
 }
 
 .dark-mode {
@@ -338,6 +346,33 @@ div.sticky {
   background-color: #001a33;
   color: white;
   
+}
+
+.imgfix {
+  position: fixed;
+  bottom: 1%;
+  left: 4%;
+}
+
+.imgfix2 {
+  position: fixed;
+  bottom: 1%;
+  left: 10%;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .imgfix {
+    
+    padding-bottom: 18%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imgfix2 {
+
+    padding-right: 95%;
+  }
 }
 
 #myBtn {
