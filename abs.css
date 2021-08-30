@@ -1,5 +1,6 @@
 body {
-  font-family:"Times New Roman", serif
+  font-family:"Times New Roman", serif;
+  overflow: hidden;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family:serif; letter-spacing:5px
@@ -12,6 +13,7 @@ h1,h2,h3,h4,h5,h6 {
   
 }
 
+
 .navbar{
  width: 100%;
  display: flex;
@@ -20,6 +22,7 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 3%;
   padding-left: 3%;
   padding-right: 3%;
+  
 }
 
 .logo{
@@ -48,6 +51,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 25px;
   cursor: pointer;
   display: none;
+  
 }
 
 nav{
@@ -181,12 +185,13 @@ nav ul li a:hover{
   color: blueviolet;
 }
 
+
 /* Create four equal columns that floats next to each other */
 .imgcolumn {
   float: left;
-  width: 25%;
+  width: 100%;
   padding: 0px;
-  
+  overflow: hidden;
 
 }
 
@@ -208,7 +213,7 @@ nav ul li a:hover{
   .imgcolumn  {
     width: 100%;
     padding-right: 50%;
-
+    
   }
   
 }
@@ -217,6 +222,7 @@ nav ul li a:hover{
 @media screen and (max-width: 600px) {
   .imgcolumn  {
     width: 100%;
+    
   }
   
 }
@@ -290,6 +296,7 @@ nav ul li a:hover{
     display: block;
     padding-left: 5%;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 }
 
@@ -365,30 +372,30 @@ div.sticky {
 
 .imgfix {
   position: fixed;
-  bottom: 1%;
+  bottom: 2%;
   left: 4%;
 }
 
 .imgfix2 {
   position: fixed;
-  bottom: 1%;
+  bottom: 2%;
   left: 10%;
   
 }
 
 @media screen and (max-width: 600px) {
   .imgfix {
-    
-    padding-bottom: 18%;
+  
+    left: 15px;
+   
   }
-}
-
-@media screen and (max-width: 600px) {
   .imgfix2 {
-
-    padding-right: 95%;
+    
+    left: 80px;
+    
   }
 }
+
 
 #myBtn {
   
@@ -404,9 +411,31 @@ div.sticky {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  
 }
 
 #myBtn:hover {
   background-color: rgb(131, 255, 115);
 }
 
+@media screen and (max-width: 600px) {
+  #myBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 270px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 0, 13, 0.767);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  
+  }
+
+  #myBtn:hover {
+    background-color: rgb(131, 255, 115);
+  }
+}
