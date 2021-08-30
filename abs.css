@@ -29,6 +29,14 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+.om {
+  width: 3%;
+  position: absolute;
+  top: 0%;
+  right: 50%;
+}
+
+
 .menu-icon{
   width: 25px;
   cursor: pointer;
