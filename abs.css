@@ -1,9 +1,13 @@
 body {
   font-family:"Times New Roman", serif;
-  overflow: hidden;
+  
 }
 h1,h2,h3,h4,h5,h6 {
   font-family:serif; letter-spacing:5px
+}
+
+.abs {
+  overflow: hidden;
 }
 
 .container{
@@ -418,24 +422,3 @@ div.sticky {
   background-color: rgb(131, 255, 115);
 }
 
-@media screen and (max-width: 600px) {
-  #myBtn {
-    position: fixed;
-    bottom: 20px;
-    left: 270px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 0, 13, 0.767);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  
-  }
-
-  #myBtn:hover {
-    background-color: rgb(131, 255, 115);
-  }
-}
